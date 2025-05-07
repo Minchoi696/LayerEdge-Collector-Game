@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LayerEdge Collector Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main menu -->
+  <div id="menu">
+    <h1>LayerEdgeCollector</h1>
+    <p>Developed by: Davenchu</p>
+    <p>Follow me on Twitter: <a href="https://x.com/ikarun696" target="_blank">Twitter</a></p>
+    <p>Join the Discord: <a href="https://discord.com" target="_blank">quesf5a5</a></p>
+    <button id="startBtn" class="btn">Start Game</button>
+  </div>
+
+  <!-- Game area -->
+  <div class="game-area" id="gameArea"></div>
+
+  <!-- Game status -->
+  <div id="gameStatus">
+    <p id="roleStatus">Role: 👶 Newbie</p>
+    <p id="levelDisplay">Level: 1</p>
+    <div id="timerBar"></div>
+  </div>
+
+  <!-- End menu -->
+  <div id="endMenu" class="popup">
+    <h2>Game Over!</h2>
+    <p>Your final score is: <span id="finalScore">0</span></p>
+    <button id="restartBtn" class="btn">Restart Game</button>
+    <button id="shareBtn" class="btn">Share on Twitter</button>
+  </div>
+
+  <!-- Popup messages -->
+  <div id="popup" class="popup"></div>
+
+  <!-- Background music -->
+  <audio id="bgMusic" loop>
+    <source src="bg-music.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
